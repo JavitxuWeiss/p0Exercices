@@ -30,7 +30,7 @@ public class Main {
         1
         19
         13 */
-        int A=-5,B=8,C=6;
+   /*     int A=-5,B=8,C=6;
         System.out.println(A + " + "+ B + " * "+ C);
         int E=55,D=9;
         System.out.println("(" + E+ "+"+D+") % "+D);
@@ -43,6 +43,20 @@ public class Main {
         System.out.println((E+D)%D);
         System.out.println(F+G*H/I);
         System.out.println(J +K / L * M - N %O);
-
+*/
+        /*
+        5. Write a Java program that takes two numbers as input and display the product of two numbers. Go to the editor
+        Test Data:
+        Input first number: 25
+        Input second number: 5
+        Expected Output :
+        25 x 5 = 125
+         */
+/*        int A=25, B=5;
+        System.out.println(String.format("Input first number: %d", A));
+        System.out.println(String.format("Input second number: %d", B));
+        System.out.println("Expected output:");
+        System.out.println(String.format("%d x %d = %d",A,B,A*B));*/
+        
     }
 }
