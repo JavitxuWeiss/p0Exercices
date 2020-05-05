@@ -1,5 +1,7 @@
 package es.Weissman.p0Exercices;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -69,16 +71,33 @@ public class Main {
         125 / 24 = 5
         125 mod 24 = 5
          */
-        /*int A=125, B=24;
-        System.out.println("Test Data:");
-        System.out.println(String.format("Input first number: %d", A));
-        System.out.println(String.format("Input second number: %d", B));
+        /*Scanner in = new Scanner(System.in);
+        System.out.print("Input first number: ");
+        int A = in.nextInt();
+        System.out.print("Input second number: ");
+        int B = in.nextInt();
         System.out.println("Expected output:");
         System.out.println(String.format("%d + %d = %d",A,B,A+B));
         System.out.println(String.format("%d - %d = %d",A,B,A-B));
         System.out.println(String.format("%d x %d = %d",A,B,A*B));
         System.out.println(String.format("%d / %d = %d",A,B,A/B));
-        System.out.println(String.format("%d mod %d = %d",A,B,A%B));*/
-        
+        System.out.println(String.format("%d mod %d = %d",A,B,A%B));
+*/
+       /* 7. Write a Java program that takes a number as input and prints its multiplication table upto 10. Go to the editor
+        Test Data:
+        Input a number: 8
+        Expected Output :
+        8 x 1 = 8
+        8 x 2 = 16
+        8 x 3 = 24
+        ...
+        8 x 10 = 80*/
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a number: ");
+        int A = in.nextInt();
+        for(int i=1;i<=10; i++){
+            System.out.println(String.format("%d x %d = %d",A,i,A*i));
+
+        }
     }
 }
