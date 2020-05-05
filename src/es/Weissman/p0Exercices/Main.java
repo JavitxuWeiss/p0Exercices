@@ -92,12 +92,37 @@ public class Main {
         8 x 3 = 24
         ...
         8 x 10 = 80*/
-        Scanner in = new Scanner(System.in);
+        /*Scanner in = new Scanner(System.in);
         System.out.print("Input a number: ");
         int A = in.nextInt();
         for(int i=1;i<=10; i++){
-            System.out.println(String.format("%d x %d = %d",A,i,A*i));
+            System.out.println(String.format("%d x %d = %d",A,i,A*i));*/
+        /*
+        8. Write a Java program to display the following pattern. Go to the editor
+            Sample Pattern :
 
-        }
+               J    a   v     v  a
+               J   a a   v   v  a a
+            J  J  aaaaa   V V  aaaaa
+             JJ  a     a   V  a     a
+         */
+        /*System.out.println("    J    a   v     v  a   ");
+        System.out.println("    J   a a   v   v  a a  ");
+        System.out.println(" J  J  aaaaa   V V  aaaaa ");
+        System.out.println("  JJ  a     a   V  a     a");*/
+        /*
+        11. Write a Java program to print the area and perimeter of a circle. Go to the editor
+        Test Data:
+        Radius = 7.5
+        Expected Output
+        Perimeter is = 47.12388980384689
+        Area is = 176.71458676442586
+         */
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a Radius number: ");
+        double   A = in.nextFloat();
+        System.out.println(String.format("Perimeter is = %.15f",2*Math.PI*A));
+        System.out.println(String.format("Area is = %.15f",Math.PI*A*A));
+
     }
 }
