@@ -118,11 +118,32 @@ public class Main {
         Perimeter is = 47.12388980384689
         Area is = 176.71458676442586
          */
-        Scanner in = new Scanner(System.in);
+        /*Scanner in = new Scanner(System.in);
         System.out.print("Input a Radius number: ");
         double   A = in.nextFloat();
         System.out.println(String.format("Perimeter is = %.15f",2*Math.PI*A));
-        System.out.println(String.format("Area is = %.15f",Math.PI*A*A));
+        System.out.println(String.format("Area is = %.15f",Math.PI*A*A));*/
+        /*
+        17. Write a Java program to add two binary numbers. Go to the editor
+        Input Data:
+        Input first binary number: 10
+        Input second binary number: 11
+        Expected Output
+
+        Sum of two binary numbers: 101
+         */
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input first binary number: ");
+        String firstOperator = in.next();
+        System.out.print("Input second binary number: ");
+        String secondOperator = in.next();
+        String Acarreos = new String("00000000000000000000000");
+        if(firstOperator.length()>=secondOperator.length()){
+
+        }
+
+        for ()
+
 
     }
 }
