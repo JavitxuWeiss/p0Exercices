@@ -137,13 +137,45 @@ public class Main {
         String firstOperator = in.next();
         System.out.print("Input second binary number: ");
         String secondOperator = in.next();
-        String Acarreos = new String("00000000000000000000000");
-        if(firstOperator.length()>=secondOperator.length()){
+//        System.out.print("1.- Suma\n2.- Resta\n3.-Multiplicacion\nElegir operacion:");
+//        char operacion=in.next().charAt(0);
+        int Maxlength = Math.max(firstOperator.length(),secondOperator.length());
+        String zfFirstOperator=adaptarLongitudOperador(firstOperator,Maxlength);
+        String zfSecondOperator=adaptarLongitudOperador(secondOperator,Maxlength);
+        String resultado;
+        resultado = sumaBinarios(zfFirstOperator,zfSecondOperator);
+        System.out.println("Resultado: " +resultado);
+    }
 
+    private static String sumaBinarios(String zfFirstOperator, String zfSecondOperator) {
+        int Acarreo=0;
+        char[] resultChar= new char[zfFirstOperator.length()+1];
+        for(int i=zfFirstOperator.length()-1;i>=0;i--){
+            int temp1= Character.getNumericValue(zfFirstOperator.charAt(i));
+            int temp2= Character.getNumericValue(zfSecondOperator.charAt(i));
+            int temp3= temp1 + temp2+Acarreo;
+            if(temp3<2){
+                resultChar[i+1]=(char)(temp3+'0');
+                Acarreo=0;}
+            else if (temp3 == 2){
+                resultChar[i+1]='0';
+                Acarreo=1;}
+            else if (temp3== 3){
+                resultChar[i+1]='1';
+                Acarreo=1;}
+            }
+        resultChar[0]=(char)(Acarreo+'0');
+            return new String(resultChar);
         }
 
-        for ()
 
 
+    private static String adaptarLongitudOperador(String Operator, int maxLength) {
+        char[] leftzeroes = new char[maxLength-Operator.length()];
+        for(int j=0;j<maxLength-Operator.length();j++){
+            leftzeroes[j]='0';
+        }
+        String leftzeroesStr = new String(leftzeroes);
+        return String.format("%s%s",leftzeroesStr,Operator);
     }
 }
